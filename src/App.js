@@ -7,8 +7,6 @@ import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 
 
-
-
 function App() {
   return (
     <div className="App">
@@ -16,8 +14,6 @@ function App() {
        <About/>
        <Projects/>
        <Contact/>
-     
-      
     </div>
   );
 }
