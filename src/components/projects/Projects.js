@@ -1,10 +1,14 @@
 import React from 'react';
+import "./projects.css"
 
-const Projects = (props) => {
+const Projects = () => {
     return (
-        <div>
-            <h1>Projects Component</h1>
-        </div>
+        <section id="projects">
+            <div>
+                <h1>Projects Component</h1>
+            </div>
+
+        </section>
     )
 }
 

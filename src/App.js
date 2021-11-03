@@ -2,9 +2,10 @@ import React from 'react';
 import './App.css';
 // Import React Components
 import Home from './components/home/Home';
-import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
-import Particles from 'react-particles-js';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+
 
 
 
@@ -13,6 +14,8 @@ function App() {
     <div className="App">
        <Home/>
        <About/>
+       <Projects/>
+       <Contact/>
      
       
     </div>

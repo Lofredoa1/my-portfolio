@@ -1,22 +1,23 @@
-import React from 'react';
-import Particles from 'react-particles-js';
+import React from "react";
 import "./home.css";
-import particlesConfig from '../../config/particles-config';
-import Navbar from '../navbar/Navbar';
+// import Particles from "react-particles-js";
+// import particlesConfig from "../../config/particles-config";
+import Navbar from "../navbar/Navbar";
 
-const Home = (props) => {
-    return (<div>
-
+const Home = () => {
+  return (
+    <div>
+      <section id="home">
         <div class="home-container">
-        <Particles params={particlesConfig}/>
-                <h1>Hello, I'm Anthony</h1>
-                <h2>I am a full-stack web developer.</h2>
-                <a href="#about">Check out my work</a>
-            </div>
-            <Navbar/>
+          <h1>Hello, I'm <span>Anthony Lofredo</span></h1>
+          <h2>I'm a full-stack</h2>
+          <h2>web developer.</h2>
+          <a href="#about" id="home-button">Check out my work</a>
+        </div>
+      </section>
+      <Navbar />
     </div>
+  );
+};
 
-    )
-}
-
-export default Home
+export default Home;

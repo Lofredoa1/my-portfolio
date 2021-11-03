@@ -1,35 +1,36 @@
 .sticky-wrapper {
-    position: relative;
-    height: 4em;
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #373737;
+  justify-content: space-around;
 }
-  
-/* .sticky .sticky-inner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-} */
+
+.sticky-wrapper > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    background-color: aqua;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .fixed {
-    transition: all 3.0s ease-in;
+  animation-name: slide-down;
+  animation-duration: 0.7s;
 }
 
 @keyframes slide-down {
-    0% {
-        opacity: 0;
-        transform: translateY(-400);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-400);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

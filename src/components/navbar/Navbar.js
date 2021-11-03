@@ -1,43 +1,37 @@
-import React, { useEffect, useState, useRef } from 'react';
-import './navbar.css'
+import React, { useEffect, useState} from "react";
+import "./navbar.css";
 
+const Navbar = () => {
+  const [isSticky, setSticky] = useState(false);
+  let h = window.innerHeight;
 
-const Navbar = (props) => {
-    
-    const [isSticky, setSticky] = useState(false);
-    let h = window.innerHeight;
-    
-    const handleScroll = () => {
-        //console.log("top:", ref.current.getBoundingClientRect().top)
-        let scrollLength = window.scrollY
-        console.log("new length:", scrollLength)
-        
-      if (scrollLength >= h) {
-        setSticky(true);
-      } else {
-          setSticky(false)
-    
-      }
-    };
+  // Sticky Header
+  const handleScroll = () => {
+    let scrollLength = window.scrollY;
 
-
-  
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-       
+    if (scrollLength >= h) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+  // Listener to detect when user is scrolling
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', () => handleScroll);
+      window.removeEventListener("scroll", () => handleScroll);
     };
-    }, [])
+  }, []);
 
-return (
-    <div class={`sticky-wrapper${isSticky ? ' sticky fixed' : ''}`} >
-        <h1 class="sticky-inner">Navbar Component</h1>
+  return (
+    <div class={`sticky-wrapper${isSticky ? " sticky fixed" : ""}`}>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
+  );
+};
 
-)
-}
-
-export default Navbar
+export default Navbar;
