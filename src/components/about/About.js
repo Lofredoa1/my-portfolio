@@ -27,7 +27,7 @@ const About = () => {
         </LightSpeed>
         <div class="about-me">
           <Tada delay={2000} fraction={1}>
-            <img src="/profile.jpeg" alt="profile picture" />
+            <img src="/profile.jpeg" alt="headshot"/>
           </Tada>
           <Fade right delay={1000}>
             <p>

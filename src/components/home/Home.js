@@ -9,13 +9,19 @@ const Home = () => {
     <div>
       <section id="home">
         <div class="home-container">
-          <h1>Hello, I'm <span>Anthony Lofredo</span></h1>
+          <h1>
+            Hello, I'm <span>Anthony Lofredo</span>
+          </h1>
           <h2>I'm a full-stack</h2>
           <h2>web developer.</h2>
-          <a href="#about" id="home-button">Check out my work</a>
+          <a href="#nav" id="home-button">
+            Check out my work
+          </a>
         </div>
       </section>
-      <Navbar />
+      <section id="nav">
+        <Navbar />
+      </section>
     </div>
   );
 };

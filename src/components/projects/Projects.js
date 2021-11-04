@@ -13,9 +13,9 @@ const Projects = () => {
           <img src="/plantie.png" alt="" />
           <h4>Plantie</h4><br/>
           <p>A full-stack MERN app built with one teammate featuring user auth, API calls, task feed based on user inputs. I was responsible for designing and creating the full React architecture as well as helping out with data logic on the backend. Try it out, testuser and testpassword are the credentials.</p>
-          <div>
-              <a href="">Code</a>
-              <a href="">Live</a>
+          <div class="code-buttons">
+              <a class="project-button" href="https://github.com/Lofredoa1/project2">Code</a>
+              <a class="project-button" href="https://project2-lofredoa1.vercel.app/">Live</a>
           </div>
         </div>
       </div>
