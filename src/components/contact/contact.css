@@ -34,7 +34,8 @@ form > button {
 form > button:hover {
     background-color: #000000;
     color: #ffffff;
-    border: 1px solid red;
+    border: 2px solid red;
+    transition: 0.7s;
 }
 
 .contact-container > p.react-reveal {
