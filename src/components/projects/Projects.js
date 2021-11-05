@@ -1,6 +1,7 @@
 import React from "react";
 import "./projects.css";
 import Slide from "react-reveal/Slide";
+import Zoom from "react-reveal/Zoom";
 
 const Projects = () => {
   return (
@@ -9,6 +10,8 @@ const Projects = () => {
         <Slide left>
           <h1>PROJECTS</h1>
         </Slide>
+        <Zoom fraction={0.3}>
+
         <div class="project">
           <img src="/plantie.png" alt="" />
           <h4>Plantie</h4><br/>
@@ -18,6 +21,9 @@ const Projects = () => {
               <a class="project-button" href="https://plant-app-frontend-seven.vercel.app/">Live</a>
           </div>
         </div>
+        </Zoom>
+        <Zoom fraction={0.3}>
+
         <div class="project">
           <img src="/mlbstats.png" alt="" />
           <h4>MLB Stat History</h4><br/>
@@ -27,6 +33,7 @@ const Projects = () => {
               <a class="project-button" href="https://project2-lofredoa1.vercel.app/">Live</a>
           </div>
         </div>
+        </Zoom>
       </div>
     </section>
   );

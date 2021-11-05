@@ -8,15 +8,24 @@ import Bounce from "react-reveal/Bounce";
 const Contact = () => {
   const [state, handleSubmit] = useForm("mbjqadvy");
   if (state.succeeded) {
-    return <p>Thanks for the message!</p>;
+    return (
+      <section id="contact">
+        <div class="contact-submit">
+          <p>Thanks for the message!</p>
+          <div class="footer">
+          <p>Anthony Lofredo ©2021</p>
+        </div>
+        </div>
+      </section>
+    )
   }
   return (
     <section id="contact">
       <div class="contact-container">
-        <Slide right fraction={0.5}>
+        <Slide right fraction={0.9}>
           <h1>CONTACT</h1>
         </Slide>
-        <Slide left fraction={0.5}>
+        <Slide left fraction={0.8}>
           <p>Have a question or want to work together?</p>
         </Slide>
         <Bounce bottom delay={1000}>

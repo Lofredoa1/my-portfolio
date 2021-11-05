@@ -5,18 +5,16 @@
     padding: 60px 0 0 0;
 }
 
-.project {
-    /* height: 420px; */
-    border: 3px solid red;
+.projects-container > div.react-reveal  {
     margin: 0 auto 10px;
 }
 
-.project > img {
+div.react-reveal > img {
     width: 260px;
     height: 150px;
 }
 
-.project > p {
+div.react-reveal > p {
     padding: 0 5px;
 }
 
@@ -24,7 +22,6 @@
     display: flex;
     align-self: flex-end;
     justify-content: center;
-
 }
 
 .project-button {
@@ -39,8 +36,44 @@
     border-radius: 5px;
 }
 
+.project-button:hover{
+    opacity: 0.7;
+}
+
 @media screen and (min-width: 768px) {
-    .project {
-        width: 300px;
+    .projects-container > div.react-reveal  {
+        width: 600px;
+    }
+
+    div.react-reveal > img {
+        width: 500px;
+        height: 300px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    div.react-reveal > p {
+        padding: 0 20px;
+    }
+    .project-button {
+        margin: 20px;
+        width: 140px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .projects-container {
+        padding-top: 100px;
+    }
+
+    .projects-container > h1.react-reveal {
+        margin: 0 0 50px 0;
+    }
+
+    .projects-container > div.react-reveal {
+        margin-bottom: 50px;
     }
 }
