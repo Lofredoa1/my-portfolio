@@ -34,6 +34,18 @@ const Projects = () => {
           </div>
         </div>
         </Zoom>
+        <Zoom fraction={0.3}>
+
+        <div class="project">
+          <img src="/pokedex.png" alt="" />
+          <h4>React Pokédex</h4><br/>
+          <p>A React app built with responsive design that uses PokéAPI to retrieve information on all the original 151 classic pokémon. This app shows core stats of each pokémon and allows the user to catch pokémon and add them to their team. Dynamic colors are utilized in this app to highlight specific pokémon types.</p>
+          <div class="code-buttons">
+              <a class="project-button" href="https://github.com/Lofredoa1/Pokedex">Code</a>
+              <a class="project-button" href="https://pokedex-hygjl7cq2-lofredoa1.vercel.app/">Live</a>
+          </div>
+        </div>
+        </Zoom>
       </div>
     </section>
   );
